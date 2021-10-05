@@ -1,0 +1,43 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--yellow);
+  height: 78px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  z-index: 100;
+
+  &__wrapper {
+    width: 1106px;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    align-self: center;
+  }
+
+  &__menu-link:not(:last-child) {
+    margin-right: 16px;
+  }
+
+  &__btn {
+    font-size: 20px;
+    line-height: 48px;
+  }
+
+  &__btn-container {
+    width: 176px;
+    height: 50px;
+    background-color: var(--black);
+    color: var(--white);
+    border-radius: 18px;
+    text-align: center;
+  }
+}

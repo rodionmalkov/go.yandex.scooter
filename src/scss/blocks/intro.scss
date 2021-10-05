@@ -1,0 +1,57 @@
+.intro {
+  position: relative;
+  height: 1149px;
+  display: flex;
+  align-items: center;
+  background: url("../img/content/intro-scooter.png") 0 142px / contain
+    no-repeat;
+  font-family: YandexSansTextRegular-wght-900, arial, sans-serif;
+
+  &__desc {
+    position: absolute;
+    bottom: 294px;
+  }
+
+  &__desc-title {
+    width: 538px;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 110%;
+  }
+
+  &__desc-btn {
+    font-size: 24px;
+    line-height: 76px;
+  }
+
+  &__desc-btn-container {
+    width: 361px;
+    height: 80px;
+    background-color: var(--black);
+    color: var(--white);
+    border-radius: 20px;
+    text-align: center;
+  }
+
+  &__desc-btn-container:hover {
+    background-color: #252525;
+  }
+
+  &__title {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background: url("../img/decor/intro-decor.svg") 38px 30px no-repeat;
+  }
+
+  &__title-text {
+    width: 704px;
+    font-size: 64px;
+    color: var(--white);
+  }
+
+  &__title-link {
+    text-decoration: underline;
+    color: var(--white);
+  }
+}
