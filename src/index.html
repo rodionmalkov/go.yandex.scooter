@@ -35,6 +35,7 @@
     <!-- MAIN START -->
 
     <main class="content --container">
+      <!-- INTRO -->
       <section class="intro">
         <h2 class="visually-hidden">Вступление</h2>
         <div class="intro__desc">
@@ -62,8 +63,53 @@
           </p>
         </div>
       </section>
-      <section class="rent"></section>
-      <section class="where"></section>
+
+      <!-- RENT -->
+      <section class="rent" id="rent">
+        <h2 class="section-title">Как арендовать самокат</h2>
+        <div class="rent__wrapper">
+          <ul class="rent__list">
+            <li class="rent__item">
+              <img
+                class="rent__item-img"
+                src="./img/content/rent-apps.svg"
+                alt="Приложение Яндекс Go"
+              />
+              <p class="rent__item-desc">В Яндекс Go нажмите кнопку Город</p>
+            </li>
+            <li class="rent__item">
+              <img
+                class="rent__item-img"
+                src="./img/content/rent-p.svg"
+                alt="Парковка самокатов"
+              />
+              <p class="rent__item-desc">Найдите на карте ближайшую парковку</p>
+            </li>
+            <li class="rent__item">
+              <img
+                class="rent__item-img"
+                src="./img/content/rent-comehere.svg"
+                alt="Дойдите до самоката и отсканируйте код"
+              />
+              <p class="rent__item-desc">
+                Дойдите до самоката и отсканируйте QR-код на руле
+              </p>
+            </li>
+          </ul>
+          <div class="rent__mobile">
+            <video autoplay loop>
+              <source src="./video/rent.mp4" type="video/mp4" />
+              <source src="./video/rent.webm" type="video/webm" />
+            </video>
+          </div>
+        </div>
+        <div class="rent__call">
+          Готово, едем! Аренда: от 50 рублей + тариф от 6 рублей в минуту
+        </div>
+      </section>
+
+      <!-- WHERE -->
+      <section class="where" id="where"></section>
     </main>
 
     <!-- MAIN END -->
