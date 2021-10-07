@@ -1,0 +1,59 @@
+.art-ride {
+  width: 100%;
+  height: 1690px;
+  background: var(--black);
+  border-radius: 56px 56px 0 0;
+  background-image: url("../img/content/rent-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: 1846px;
+  background-position-x: center;
+  background-position-y: top;
+  position: relative;
+
+  &__decor {
+    position: absolute;
+    top: 130px;
+    left: calc(50% - 769px);
+  }
+
+  &__wrapper {
+    position: absolute;
+    top: 380px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    height: 640px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 32px;
+    line-height: 130%;
+  }
+
+  &__top {
+    color: var(--white);
+  }
+
+  &__top-title {
+    font-family: YandexSansTextRegular-wght-900, arial, sans-serif;
+    font-size: 64px;
+  }
+
+  &__top-desc {
+    width: 570px;
+    font-family: YandexSansTextRegular-wght600, arial, sans-serif;
+  }
+
+  &__bottom-decor {
+    position: absolute;
+    top: 190px;
+    right: calc(50% - 710px);
+    width: 304px;
+    height: 466px;
+  }
+
+  &__bottom-desc {
+    width: 792px;
+    color: #21201f;
+  }
+}

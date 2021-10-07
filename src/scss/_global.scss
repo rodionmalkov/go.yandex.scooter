@@ -4,7 +4,12 @@ html {
 
 .page {
   font-family: YandexSansTextRegular-wght600, arial, sans-serif;
-  background-color: var(--yellow);
+  background: var(--rgb-yellow);
+  background: linear-gradient(
+    180deg,
+    var(--rgba-yellow) 70%,
+    var(--rgba-white) 70%
+  );
   color: var(--black);
   margin: 0;
   padding: 0;
@@ -12,6 +17,12 @@ html {
   display: grid;
   grid-template-rows: 1fr min-content;
   align-content: start;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 a {
