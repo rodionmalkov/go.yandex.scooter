@@ -92,3 +92,71 @@
     line-height: 130%;
   }
 }
+
+.swiper-pagination-bullet-active {
+  background-color: var(--black);
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .gently {
+    width: 90%;
+    height: 2500px;
+
+    // !!! SLIDER !!!
+
+    &__slider {
+      top: 40px;
+      width: 100%;
+    }
+
+    &__slider-container {
+      width: 100%;
+    }
+
+    &__slider-pagination {
+      top: 480px;
+      right: 50%;
+      transform: translate(50%, 0);
+    }
+
+    // !!! EDUCATION !!!
+
+    &__education {
+      top: 560px;
+      transform: translate(0, 0);
+      padding: 0 0 140px;
+      width: 100%;
+    }
+
+    &__education-wrapper {
+      width: 80%;
+    }
+
+    &__education-list {
+      gap: 10px;
+    }
+
+    &__education-item {
+      width: 100%;
+    }
+
+    // !!! INSURANCE !!!
+
+    &__insurance {
+      bottom: 40px;
+      width: 100%;
+      padding: 30px 0;
+      border-radius: 32px;
+    }
+
+    &__insurance-wrapper {
+      width: 90%;
+    }
+
+    &__insurance-text {
+      width: 100%;
+      font-size: 22px;
+    }
+  }
+}

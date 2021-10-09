@@ -41,6 +41,10 @@
     border-radius: 4px;
   }
 
+  &__input:focus {
+    outline: 2px solid var(--yellow2);
+  }
+
   &__input-plus {
     position: absolute;
     top: 50%;
@@ -57,5 +61,67 @@
     border-radius: 4px;
     font-family: Helvetica, Arial, sans-serif;
     font-size: 20px;
+    cursor: pointer;
+  }
+
+  &__button:hover {
+    background-color: var(--yellow2);
+  }
+
+  &__popup {
+    display: none;
+    position: absolute;
+    top: 55px;
+    left: 0;
+    box-sizing: border-box;
+    width: 200px;
+    padding: 0 11px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: var(--white);
+    background-color: var(--popup-error);
+  }
+
+  &__popup-tail {
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 10px;
+    height: 10px;
+    background-color: var(--popup-error);
+  }
+
+  &__popup-error {
+    display: block;
+  }
+
+  &__download {
+    display: none;
+  }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .app {
+    height: 100%;
+    background-size: 0;
+    background-color: var(--white);
+
+    &__title {
+      display: none;
+    }
+
+    &__desc {
+      display: none;
+    }
+
+    &__form {
+      display: none;
+    }
+
+    &__download {
+      display: block;
+      margin: 20px 0;
+    }
   }
 }

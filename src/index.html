@@ -13,9 +13,10 @@
       <div class="header__wrapper">
         <div class="header__logo">
           <img
+            class="header__logo-img"
             src="./img/logo-yago.svg"
-            width="158"
-            height="45"
+            width="177"
+            height="51"
             alt="Логотип Яндекс Go"
           />
         </div>
@@ -388,12 +389,23 @@
               class="app__input"
               type="tel"
               autocomplete="off"
+              pattern="[7-8]{1}[0-9]{3}[0-9]{7}"
               placeholder="7 123 XXXXXXX"
-              name="lc-input-phone"
+              name="input-phone"
+              required
             />
+            <div class="app__popup">
+              <p>Проверьте, правильно ли указан номер телефона</p>
+              <div class="app__popup-tail"></div>
+            </div>
             <span class="app__input-plus">+</span>
             <button class="app__button" type="submit">Отправить</button>
           </form>
+          <a href="#app" class="app__download intro__desc-btn">
+            <div class="app__download-container intro__desc-btn-container">
+              Скачать приложение
+            </div>
+          </a>
         </div>
       </section>
     </main>
